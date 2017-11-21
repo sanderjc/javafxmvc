@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package javafxmvc.controller;
 
 import java.io.IOException;
@@ -39,7 +35,10 @@ public class FXMLVBoxMainController implements Initializable {
         AnchorPane a = (AnchorPane) FXMLLoader.load(getClass().getResource("/javafxmvc/view/FXMLAnchorPaneCadastrosClientes.fxml"));
         anchorPane.getChildren().setAll(a);
     }
-
+    public void handleMenuItemProcessosVendas () throws IOException{
+        AnchorPane b = (AnchorPane) FXMLLoader.load(getClass().getResource("/javafxmvc/view/FXMLAnchorPaneProcessosVendas.fxml"));
+        anchorPane.getChildren().setAll(b);
+    }
     
 }
 
